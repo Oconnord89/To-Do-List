@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myMod">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script src="Javascript/app.js"></script>
+        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title>To Do List</title>
+
+  </head>
+  <body ng-controller="myCtrl">
+    <div id="area">
+        <h3 id=head>To Do List</h3>
+          <!-- <label for="items"></label> -->
+          <input class="inputBox" type="text" ng-model="item" placeholder="Type your tasks here!">
+          <input class="inputBox" type="text" ng-model="myFilter" placeholder="Filter a specific task here!">
+          <button id="myBtn" type="button" ng-click="addItem(item)">Add to List</button>
+            <ul id="myList">
+              <div ng-hide="hide" ng-repeat="item in items |filter: myFilter">
+                  <li>{{item}}
+                    <input id="chkBox" type="checkbox" ng-model="hide">
+                  </li>
+              </div>
+            </ul>
+
+    </div>
+
+
+  </body>
+</html>

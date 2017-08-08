@@ -1,0 +1,55 @@
+body{
+  font-family: chunkFive;
+  color: mediumvioletred;
+  background-color: mediumvioletred;
+
+}
+
+
+#area {
+  width: 400px;
+  height: 800px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+
+#head {
+  font-size: 60px;
+  color: mediumvioletred;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  font-family: chunkFive;
+}
+
+.inputBox {
+  color: white;
+  text-align: center;
+  background-color: palevioletred;
+  margin-left: 19px;
+  border-radius: 14px;
+  border: 0px;
+  width: 167px;
+  height: 30px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: white;
+}
+
+#myBtn {
+  font-family: chunkFive;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 140px;
+  background-color: mediumvioletred;
+  width:100px;
+  height: 40px;
+  color: white;
+  border: 0px;
+}
+
+#chkBox {
+  cursor: pointer;
+}
